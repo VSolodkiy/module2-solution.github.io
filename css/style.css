@@ -1,0 +1,117 @@
+@font-face {
+    font-family: '1942_report1942_report';
+    src: url('../fonts/1942-webfont.eot');
+    src: url('../fonts/1942-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/1942-webfont.woff') format('woff'),
+         url('../fonts/1942-webfont.ttf') format('truetype'),
+         url('../fonts/1942-webfont.svg#1942_report1942_report') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'action_manregular';
+    src: url('../fonts/Action_Man-webfont.eot');
+    src: url('../fonts/Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Action_Man-webfont.woff2') format('woff2'),
+         url('../fonts/Action_Man-webfont.woff') format('woff'),
+         url('../fonts/Action_Man-webfont.ttf') format('truetype'),
+         url('../fonts/Action_Man-webfont.svg#action_manregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*******Base style********/
+* {
+    box-sizing: border-box;
+}
+body {
+margin: 0;
+padding: 0;
+}
+h1 {
+margin-bottom: 20px;
+text-align: center;
+font-family: 'action_manregular';
+}
+.container {
+width: 100%;
+margin: 10px 11px 10px 17px;
+}
+.container1, .container2, .container3 { 
+border: 1px solid black;
+background-color: #C0C0C0;
+width: 93%;
+height: 50%;
+font-family: 'Times New Roman', Times, serif;
+color: black;
+margin: 10px 8px 10px 8px;
+position: relative;
+padding: 5px;
+float: left;
+}
+p {
+text-align: justify;
+}
+.title {
+border: 1px solid black;
+width: 25%;
+text-align: center;
+font-weight: bold;
+position: absolute;
+top: 0;
+right: 0;
+
+}
+.title1 {
+    background-color: #FFB6C1;
+    border-top: 1px solid #FFB6C1;
+    border-right: 1px solid #FFB6C1;
+    font-family: 'action_manregular';
+}
+.title2 {
+    background-color: #FF0000;
+    border-top: 1px solid #FF0000;
+    border-right: 1px solid #FF0000;
+    font-family: 'action_manregular';
+}
+.title3 {
+    background-color: #FFA500;
+    border-top: 1px solid #FFA500;
+    border-right: 1px solid #FFA500;
+    font-family: 'action_manregular';
+}
+/*******Large device only********/
+@media (min-width: 992px) {
+    .container1, .container2, .container3 {
+        float: left;
+    }
+    .container1 {
+        width: 31%;
+        height: 31%;
+    }
+    .container2 {
+        width: 31%;
+        height: 31%;
+    }
+    .container3 {
+        width: 31%;
+        height: 31%;
+    }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container1, .container2, {
+        float: left;
+        margin: 10px 10px 10px 30px;
+    }
+    .container1 {
+        width: 45%;
+        height: 31%;
+    }
+    .container2 {
+        width: 45%;
+        height: 31%;
+    }
+    .container3 {
+        width: 91.8%;
+        height: 31%;
+    }
+}
